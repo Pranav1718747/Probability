@@ -1,0 +1,4 @@
+Dataset,Valid_N,ChiSquare_Stat,Degrees_of_Freedom,Critical_Val_05,P_Value,MAD,Min_Expected_Count,Decision_Alpha_05
+Genuine World Bank Country Populations (2023),217,7.6083,8,15.5073,4.726343e-01,0.01521,9.93,Fail to Reject H0 (Distribution is consistent with Benford's Law)
+Simulated Fabricated Numbers (Uniform Bias),217,79.9819,8,15.5073,4.929951e-14,0.06211,9.93,Reject H0 (Distribution departs significantly from Benford's Law)
+North American River Lengths (rivers),141,44.1766,8,15.5073,5.268765e-07,0.05246,6.45,Reject H0 (Distribution departs significantly from Benford's Law)
