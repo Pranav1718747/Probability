@@ -1,0 +1,57 @@
+==========================================================================================
+ BMAT202 DA3: BENFORD'S LAW & CHI-SQUARE GOODNESS-OF-FIT STATISTICAL SUMMARY
+==========================================================================================
+Course: BMAT202 – Probability and Statistics (Module 6: Hypothesis Testing-II)
+Significance Level (alpha) = 0.05 | Degrees of Freedom (df) = 8 | Critical Value = 15.5073
+
+Dataset                                          | n     | chi2     | p-value      | MAD      | Decision
+------------------------------------------------------------------------------------------------------------------------
+Genuine World Bank Country Populations (2023)    | 217   | 7.608    | 4.726343e-01 | 0.0152   | Fail to Reject H0 (Distribution is consistent with Benford's Law)
+Simulated Fabricated Numbers (Uniform Bias)      | 217   | 79.982   | 4.929951e-14 | 0.0621   | Reject H0 (Distribution departs significantly from Benford's Law)
+North American River Lengths (rivers)            | 141   | 44.177   | 5.268765e-07 | 0.0525   | Reject H0 (Distribution departs significantly from Benford's Law)
+
+==========================================================================================
+DETAILED FREQUENCY TABLES:
+
+--- Genuine World Bank Country Populations (2023) (n = 217) ---
+Digit | Observed | Expected | Obs Prop | Exp Prop | (O - E) | (O-E)^2/E
+  1   | 68       | 65.32    | 0.3134   | 0.3010   | 2.68    | 0.1097   
+  2   | 36       | 38.21    | 0.1659   | 0.1761   | -2.21   | 0.1280   
+  3   | 30       | 27.11    | 0.1383   | 0.1249   | 2.89    | 0.3077   
+  4   | 16       | 21.03    | 0.0737   | 0.0969   | -5.03   | 1.2029   
+  5   | 25       | 17.18    | 0.1152   | 0.0792   | 7.82    | 3.5569   
+  6   | 16       | 14.53    | 0.0737   | 0.0669   | 1.47    | 0.1493   
+  7   | 8        | 12.58    | 0.0369   | 0.0580   | -4.58   | 1.6700   
+  8   | 10       | 11.10    | 0.0461   | 0.0512   | -1.10   | 0.1090   
+  9   | 8        | 9.93     | 0.0369   | 0.0458   | -1.93   | 0.3749   
+Chi-square = 7.6083, df = 8, p-value = 4.726343e-01, MAD = 0.01521
+Decision: Fail to Reject H0 (Distribution is consistent with Benford's Law)
+
+--- Simulated Fabricated Numbers (Uniform Bias) (n = 217) ---
+Digit | Observed | Expected | Obs Prop | Exp Prop | (O - E) | (O-E)^2/E
+  1   | 30       | 65.32    | 0.1383   | 0.3010   | -35.32  | 19.1011  
+  2   | 24       | 38.21    | 0.1106   | 0.1761   | -14.21  | 5.2857   
+  3   | 16       | 27.11    | 0.0737   | 0.1249   | -11.11  | 4.5541   
+  4   | 28       | 21.03    | 0.1290   | 0.0969   | 6.97    | 2.3105   
+  5   | 31       | 17.18    | 0.1429   | 0.0792   | 13.82   | 11.1119  
+  6   | 20       | 14.53    | 0.0922   | 0.0669   | 5.47    | 2.0615   
+  7   | 27       | 12.58    | 0.1244   | 0.0580   | 14.42   | 16.5138  
+  8   | 21       | 11.10    | 0.0968   | 0.0512   | 9.90    | 8.8295   
+  9   | 20       | 9.93     | 0.0922   | 0.0458   | 10.07   | 10.2139  
+Chi-square = 79.9819, df = 8, p-value = 4.929951e-14, MAD = 0.06211
+Decision: Reject H0 (Distribution departs significantly from Benford's Law)
+
+--- North American River Lengths (rivers) (n = 141) ---
+Digit | Observed | Expected | Obs Prop | Exp Prop | (O - E) | (O-E)^2/E
+  1   | 14       | 42.45    | 0.0993   | 0.3010   | -28.45  | 19.0630  
+  2   | 31       | 24.83    | 0.2199   | 0.1761   | 6.17    | 1.5338   
+  3   | 36       | 17.62    | 0.2553   | 0.1249   | 18.38   | 19.1843  
+  4   | 18       | 13.66    | 0.1277   | 0.0969   | 4.34    | 1.3757   
+  5   | 12       | 11.16    | 0.0851   | 0.0792   | 0.84    | 0.0625   
+  6   | 13       | 9.44     | 0.0922   | 0.0669   | 3.56    | 1.3430   
+  7   | 8        | 8.18     | 0.0567   | 0.0580   | -0.18   | 0.0038   
+  8   | 5        | 7.21     | 0.0355   | 0.0512   | -2.21   | 0.6787   
+  9   | 4        | 6.45     | 0.0284   | 0.0458   | -2.45   | 0.9317   
+Chi-square = 44.1766, df = 8, p-value = 5.268765e-07, MAD = 0.05246
+Decision: Reject H0 (Distribution departs significantly from Benford's Law)
+
